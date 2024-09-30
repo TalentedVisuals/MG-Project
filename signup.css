@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Netflix sans;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 150px;
+}
+
+.form-header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #1b3a57;
+}
+
+.form-header p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button a {
+    text-decoration: none;
+    color: #f0f4f8;
+}
+
+
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus {
+    
+    outline: none;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    /* background-color: #0058D7; */
+}
+
+.terms label {
+    font-size: 12px;
+}
+
+#terms {
+    margin-left: -150px;
+}
+
+.terms input {
+    margin-right: 10px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+.submit-btn {
+    background-color: #0058D7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.form-footer p {
+    text-align: center;
+    color: #6c757d;
+}
+
+.form-footer a {
+    color: #0058D7;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .signup-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+}

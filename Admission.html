@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission | UP School</title>
+    <link rel="stylesheet" href="Admission.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <img src="./ASSETS/IMG/up_school_logo-removebg-preview.png" alt="logo" height="30px" class="logo">
+    <input type="checkbox" id="toggle" />
+
+    <label for="toggle" id="overlay"></label>
+    <div class="links-container">
+        <label for="toggle" class="close"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                width="32px" fill="#f3f3f3">
+                <path
+                    d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z" />
+            </svg></label>
+
+        <a href="./index.html">Home</a>
+        <a href="./program.html">Learning Program</a>
+        <a href="./About.html">About us</a>
+        <a href="./Admission.html">Admission</a>
+        <a href="./login.html" class="hid">Login</a>
+
+    </div>
+
+
+    <div class="right"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+            fill="#181818" class="lang">
+            <path
+                d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+        </svg>
+        <ul>
+
+            <li class="language-dropdown">
+                <span class="language-selected">Eng</span>
+                <ul class="language-options">
+                    <li><a href="./index.html" class="language-option">Eng</a></li>
+                    <li><a href="./french.html" class="language-option">Fre</a></li>
+                    <li><a href="#" class="language-option">Esp</a></li>
+                </ul>
+            </li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="24px" fill="#181818"
+            class="down">
+            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+        </svg>
+    </div>
+    <label for="toggle" class="open">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#181818">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+    </label>
+    <button type="button" id="login"><a href="./login.html">Login</a></button>
+
+</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Admissions at UP School</h1>
+                <p>Tech Learning Programs that Shape the Future</p>
+                <p>Unlock your potential in technology with our expert-led courses, designed to earn you certifications
+                    from national and international bodies.</p>
+            </div>
+            <div class="hero-image">
+                <img src="./ASSETS/IMG/group-people-working-with-gadgets.jpg" alt="Students learning technology">
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories Section -->
+    <section class="courses">
+        <div class="container">
+            <h2>Choose Your Course</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Languages: Python, Java, JavaScript, C++, HTML/CSS</li>
+                        <li>Frameworks: React, Angular, Vue.js</li>
+                        <li>Databases: MySQL, MongoDB</li>
+                        <li>Certifications: Oracle Java Certification, Python Institute Certification</li>
+                    </ul>
+                </div>
+                <div class="course-item">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Fundamentals: TCP/IP, DNS, DHCP</li>
+                        <li>Advanced: Proxy, Cisco, Ubiquiti</li>
+                        <li>Security: Firewall Configuration, Network Vulnerability</li>
+                        <li>Certifications: Cisco CCNA, CompTIA Network+</li>
+                    </ul>
+                </div>
+                <div class="course-item">
+                    <h3>Internet of Things (IoT)</h3>
+                    <ul>
+                        <li>Hardware: Arduino, Raspberry Pi</li>
+                        <li>Software: IoT Protocols, Data Analytics</li>
+                        <li>Applications: Smart Home Automation, Industrial Automation</li>
+                        <li>Certifications: IBM IoT Certification, Microsoft Azure IoT Certification</li>
+                    </ul>
+                </div>
+                <!-- Add other course categories similarly -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Program Features</h2>
+            <ul class="features-list">
+                <li>Expert instructors with industry experience</li>
+                <li>Hands-on training and project-based learning</li>
+                <li>National to international certifications</li>
+                <li>Flexible learning paths and schedules</li>
+                <li>State-of-the-art facilities and resources</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certification Partners Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2>Certification Partners</h2>
+            <div class="cert-logos">
+                <img src="./ASSETS/IMG/Oracle-Logo-removebg-preview.png" alt="Oracle"  height="80px">
+                <img src="./ASSETS/IMG/Cisco-Logo-2006-present-removebg-preview.png" alt="Cisco" height="80px">
+                <img src="./ASSETS/IMG/comptia_logo-removebg-preview.png" alt="CompTIA" height="80px">
+                <img src="./ASSETS/IMG/Microsoft_Logo-removebg-preview.png" alt="Microsoft" height="80px">
+                <img src="./ASSETS/IMG/jbm_logo-removebg-preview.png" alt="IBM" height="80px">
+                <img src="./ASSETS/IMG/google_logo-removebg-preview.png" alt="Google" height="80px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2>Admission Requirements</h2>
+            <ul class="requirements-list">
+                <li>Age: 13-30 </li>
+                
+                <li>Prerequisites: None (beginner-friendly)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="apply">
+        <div class="container">
+            <h2>Apply Now</h2>
+            <p>Join our tech learning programs and pave your way to a bright future.</p>
+            <a href="apply-form.html" class="apply-btn">Fill out the Application Form</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-first-div">
+                    <img src="./ASSETS/IMG/up_school_logo-removebg-preview.png" alt="" height="30px" class="footer-logo">
+                    <p class="footer-first-p">Madison Avenue 10-12, New <br> York, United State</p>
+                    <div class="icons">
+                        <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icons">
+                            <path
+                                d="M20.125 31.9098C28.5442 30.7481 35 24.088 35 16.0447C35 7.18323 27.1652 0 17.5 0C7.83475 0 0 7.18323 0 16.0447C0 24.088 6.45575 30.7497 14.875 31.9098V20.8582H12.25C11.5538 20.8582 10.8861 20.6046 10.3938 20.1533C9.90156 19.7019 9.625 19.0898 9.625 18.4515C9.625 17.8132 9.90156 17.201 10.3938 16.7497C10.8861 16.2983 11.5538 16.0447 12.25 16.0447H14.875V12.8358C14.875 11.3464 15.5203 9.91806 16.669 8.86492C17.8176 7.81178 19.3755 7.22013 21 7.22013H21.875C22.5712 7.22013 23.2389 7.4737 23.7312 7.92504C24.2234 8.37639 24.5 8.98855 24.5 9.62685C24.5 10.2651 24.2234 10.8773 23.7312 11.3286C23.2389 11.78 22.5712 12.0336 21.875 12.0336H21C20.7679 12.0336 20.5454 12.1181 20.3813 12.2685C20.2172 12.419 20.125 12.623 20.125 12.8358V16.0447H22.75C23.4462 16.0447 24.1139 16.2983 24.6062 16.7497C25.0984 17.201 25.375 17.8132 25.375 18.4515C25.375 19.0898 25.0984 19.7019 24.6062 20.1533C24.1139 20.6046 23.4462 20.8582 22.75 20.8582H20.125V31.9098Z"
+                                fill="#0063DB" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icons">
+                            <path
+                                d="M19.299 0C21.2677 0.00524987 22.2669 0.0157496 23.1296 0.040249L23.4691 0.0524987C23.861 0.0664983 24.2478 0.0839979 24.715 0.104997C26.5769 0.192495 27.8473 0.486488 28.962 0.918728C30.117 1.36322 31.0899 1.9652 32.0629 2.93643C32.953 3.81094 33.6416 4.86921 34.0805 6.03735C34.5128 7.15208 34.8067 8.42255 34.8942 10.2863C34.9152 10.7517 34.9327 11.1385 34.9467 11.5322L34.9572 11.8717C34.9835 12.7327 34.994 13.7319 34.9975 15.7006L34.9992 17.0061V19.2985C35.0035 20.575 34.9901 21.8514 34.959 23.1274L34.9485 23.4669C34.9345 23.8607 34.917 24.2474 34.896 24.7129C34.8085 26.5766 34.511 27.8453 34.0805 28.9618C33.6416 30.1299 32.953 31.1882 32.0629 32.0627C31.1884 32.9529 30.1301 33.6415 28.962 34.0804C27.8473 34.5127 26.5769 34.8067 24.715 34.8942L23.4691 34.9467L23.1296 34.9572C22.2669 34.9817 21.2677 34.9939 19.299 34.9974L17.9936 34.9992H15.703C14.426 35.0037 13.149 34.9902 11.8724 34.9589L11.5329 34.9484C11.1175 34.9327 10.7022 34.9146 10.287 34.8942C8.42507 34.8067 7.15463 34.5127 6.03819 34.0804C4.8707 33.6413 3.81308 32.9527 2.9391 32.0627C2.0483 31.1884 1.35912 30.1301 0.919699 28.9618C0.487471 27.8471 0.193486 26.5766 0.10599 24.7129L0.0534926 23.4669L0.0447433 23.1274C0.0124855 21.8514 -0.00209866 20.575 0.000995344 19.2985V15.7006C-0.00384823 14.4242 0.00898582 13.1478 0.0394935 11.8717L0.0517429 11.5322C0.0657422 11.1385 0.0832412 10.7517 0.10424 10.2863C0.191736 8.42255 0.485721 7.15383 0.917949 6.03735C1.35839 4.86873 2.04878 3.81042 2.94085 2.93643C3.81432 2.04666 4.87133 1.3581 6.03819 0.918728C7.15463 0.486488 8.42332 0.192495 10.287 0.104997C10.7525 0.0839979 11.1409 0.0664983 11.5329 0.0524987L11.8724 0.0419989C13.1484 0.010907 14.4248 -0.00251066 15.7012 0.00174983L19.299 0ZM17.5001 8.74979C15.1796 8.74979 12.9541 9.67164 11.3132 11.3125C9.67238 12.9534 8.75055 15.179 8.75055 17.4996C8.75055 19.8202 9.67238 22.0457 11.3132 23.6866C12.9541 25.3275 15.1796 26.2494 17.5001 26.2494C19.8206 26.2494 22.0461 25.3275 23.687 23.6866C25.3278 22.0457 26.2497 19.8202 26.2497 17.4996C26.2497 15.179 25.3278 12.9534 23.687 11.3125C22.0461 9.67164 19.8206 8.74979 17.5001 8.74979ZM17.5001 12.2497C18.1895 12.2496 18.8722 12.3853 19.5092 12.649C20.1461 12.9127 20.7249 13.2993 21.2125 13.7867C21.7001 14.2742 22.0868 14.8528 22.3508 15.4897C22.6147 16.1266 22.7506 16.8093 22.7507 17.4987C22.7508 18.1881 22.6152 18.8708 22.3514 19.5078C22.0877 20.1448 21.7011 20.7236 21.2137 21.2112C20.7263 21.6988 20.1477 22.0856 19.5108 22.3495C18.8739 22.6134 18.1913 22.7493 17.5019 22.7494C16.1095 22.7494 14.7743 22.1963 13.7897 21.2118C12.8052 20.2273 12.2521 18.8919 12.2521 17.4996C12.2521 16.1072 12.8052 14.7719 13.7897 13.7874C14.7743 12.8028 16.1095 12.2497 17.5019 12.2497M26.6889 6.12485C26.1088 6.12485 25.5524 6.35531 25.1422 6.76554C24.732 7.17577 24.5015 7.73215 24.5015 8.3123C24.5015 8.89245 24.732 9.44883 25.1422 9.85906C25.5524 10.2693 26.1088 10.4997 26.6889 10.4997C27.269 10.4997 27.8254 10.2693 28.2356 9.85906C28.6458 9.44883 28.8763 8.89245 28.8763 8.3123C28.8763 7.73215 28.6458 7.17577 28.2356 6.76554C27.8254 6.35531 27.269 6.12485 26.6889 6.12485Z"
+                                fill="#0063DB" />
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icons">
+                            <path
+                                d="M35 4.15488C33.6891 4.86755 32.2991 5.33589 30.8759 5.54445C32.3744 4.43953 33.4957 2.70305 34.0316 0.657723C32.6237 1.68829 31.0802 2.41053 29.4731 2.80121C28.3925 1.37907 26.9601 0.435906 25.3987 0.118335C23.8373 -0.199236 22.2344 0.126584 20.8391 1.04514C19.4437 1.9637 18.3342 3.42353 17.6831 5.19768C17.0319 6.97183 16.8755 8.9609 17.2382 10.8557C14.3827 10.6805 11.5891 9.76825 9.03899 8.17831C6.48888 6.58836 4.23927 4.35626 2.43635 1.62704C1.7983 2.97541 1.46293 4.50806 1.46456 6.06818C1.46456 9.13031 2.73338 11.8355 4.65808 13.4194C3.51836 13.3727 2.4039 12.9942 1.40618 12.3149V12.4226C1.40613 14.4624 1.9797 16.4393 3.02961 18.0182C4.07952 19.5971 5.54113 20.6807 7.16654 21.0853C6.10833 21.4388 4.99852 21.4908 3.92151 21.2373C4.3798 22.9931 5.27312 24.5285 6.47633 25.6286C7.67954 26.7287 9.13238 27.3383 10.6313 27.3721C9.14137 28.8106 7.4356 29.874 5.61146 30.5016C3.78732 31.1292 1.88054 31.3087 0 31.0298C3.28229 33.6261 7.10318 35.0045 11.0056 35C24.2158 35 31.4373 21.5414 31.4373 9.86944C31.4373 9.48791 31.4305 9.10708 31.4167 8.72695C32.8218 7.47741 34.0346 5.92991 34.9983 4.15699"
+                                fill="#0063DB" />
+                        </svg>
+    
+    
+                    </div>
+                </div>
+                <div class="footer-second-div">
+                    <div class="footer-links-container">
+                        <h3 class="footer-head">Pages</h3>
+                        <ul class="footer-list">
+                            <li><a href="./index.html" class="footer-links">Home</a></li>
+                            <li><a href="./program.html" class="footer-links">Program</a></li>
+                            <li><a href="./About.html" class="footer-links">About Us</a></li>
+                            <li><a href="./Admission.html" class="footer-links">Admission</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container">
+                        <h3 class="footer-head">Profile</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-links">Achievement</a></li>
+                            <li><a href="#" class="footer-links">Gallery</a></li>
+                            <li><a href="#" class="footer-links">Contact Us</a></li>
+                            <li><a href="#" class="footer-links">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container">
+                        <h3 class="footer-head">Company</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-links">Career</a></li>
+                            <li><a href="#" class="footer-links">Scholarship</a></li>
+                            <li><a href="#" class="footer-links">Alumni</a></li>
+                            <li><a href="#" class="footer-links">Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-container">
+                        <h3 class="footer-head">My Account</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-links">Profile</a></li>
+                            <li><a href="#" class="footer-links">Settings</a></li>
+    
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="footer-foot">
+                <p class="footer-foot-p">&copy;2023 UP School. All rights reserved</p>
+                <p class="footer-foot-p">Term & Conditions &nbsp; Privacy Policy</p>
+    
+            </div>
+    
+        </section>
+    </footer>
+</body>
+
+</html>

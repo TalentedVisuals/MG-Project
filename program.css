@@ -1,0 +1,528 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Netflix sans;
+}
+
+:root {
+    --main-color: #0058D7;
+    --text-color-1: #f3f3f3;
+    --text-color-2: #181818;
+    --text-color-3: rgba(59, 59, 59, 0.4);
+
+
+}
+
+body {
+    background-color: #f4f4f9;
+    
+}
+
+/* Navigation Section */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    /* background-color: var(--main-color);   */
+}
+
+.logo {
+    margin-left: 50px;
+    transition: all 0.3s ease;
+}
+
+.links-container {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: var(--text-color-3);
+    font-family: netflix sans;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.links-container a:active,
+.links-container a:focus {
+    text-decoration: none;
+    color: var(--text-color-2);
+
+}
+
+.links-container a:hover {
+    color: var(--text-color-2);
+}
+
+.hid {
+    display: none;
+}
+
+.language-dropdown {
+    position: relative;
+    list-style: none;
+    font-family: Netflix sans;
+    color: var(--text-color-2);
+    margin-left: -88px;
+
+}
+
+.language-selected {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 450;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--main-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid var(--text-color-1); */
+}
+
+.language-options li {
+    margin: 0;
+    padding: 0;
+}
+
+.language-option {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.language-option:hover {
+    background-color: #014db8;
+}
+
+.language-dropdown:hover .language-options {
+    display: block;
+}
+
+#login {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--main-color);
+    color: var(--text-color-1);
+    font-family: Netflix sans;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#login a {
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+#login:hover {
+    background-color: #014db8;
+}
+
+.lang {
+    margin-right: 80px;
+}
+
+.down {
+    margin-left: -55px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.footer {
+    padding: 100px;
+    padding-top: 50px;
+    margin-top: 100px;
+
+    /* background-color: #014db8; */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+    /* margin: 10px; */
+    /* background-color: #1a1a1a; */
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-first-p {
+    font-family: Netflix sans;
+    font-size: 12px;
+    color: var(--text-color-3);
+}
+
+/* .footer-first-div {
+    background-color: #8e8e8e;
+} */
+
+.footer-second-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-list li {
+    list-style: none;
+    font-family: Netflix sans;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: var(--text-color-3);
+}
+
+/* .footer-links-container {
+    background-color: #E0DFDF;
+} */
+
+.footer-head {
+    font-family: Netflix sans;
+    font-size: 14px;
+    color: var(--text-color-2);
+}
+
+.footer-hr {
+    /* background-color: var(--text-color-3); */
+    margin-top: 30px;
+    height: 0.5px;
+
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-foot-p {
+    font-family: Netflix sans;
+    font-size: 12px;
+    color: var(--text-color-3);
+}
+
+
+
+
+
+.close {
+    display: none;
+
+}
+
+.open {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Learning Section */
+.learning-section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.learning-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.learning-section p {
+    margin-bottom: 2rem;
+}
+
+/* Current Course */
+.current-course {
+    margin-bottom: 2rem;
+}
+
+.current-course h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.current-course .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.current-course .progress {
+    width: 60%;
+    /* Dynamic width based on the progress */
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+.continue-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #003f87;
+}
+
+/* Recommended Courses */
+.recommended-courses {
+    margin-bottom: 2rem;
+}
+
+.recommended-courses h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.course {
+    flex: 1 1 calc(50% - 1.5rem);
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.course h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.enroll-btn {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+    }
+
+    .learning-section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .continue-btn,
+    .enroll-btn {
+        width: 100%;
+    }
+
+         .footer {
+             padding: 20px;
+             padding-top: 30px;
+    
+         }
+    
+         .footer-foot-p {
+             font-size: 6px;
+         }
+    
+         .footer-links {
+             font-size: 6px;
+         }
+    
+         .footer-head {
+             font-size: 7px;
+         }
+    
+         .footer-first-p {
+             font-size: 6px;
+         }
+    
+         .footer-logo {
+             height: 20px;
+         }
+    
+         .social-icons {
+             height: 12px;
+             width: 12px;
+         }
+    
+         .icons {
+             width: 25%;
+         }
+    
+         .links-container {
+             flex-direction: column;
+             align-items: flex-start;
+             position: fixed;
+             top: 0;
+             right: -100%;
+    
+             z-index: 10;
+             width: 300px;
+             background-color: var(--main-color);
+             box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
+             transition: 1s ease-out;
+    
+         }
+    
+         #login {
+             display: none;
+         }
+    
+         .links-container a {
+             color: #f3f3f3a2;
+         }
+    
+         nav a {
+             box-sizing: border-box;
+             height: auto;
+             width: 100%;
+             padding: 20px 30px;
+             justify-content: flex-start;
+             color: var(--text-color-1);
+         }
+    
+         .open,
+         .close {
+             display: block;
+             padding: 20px;
+    
+    
+         }
+    
+         .open {
+             margin-top: 10px;
+             margin-left: 0px;
+         }
+    
+         .hid {
+             display: block;
+         }
+    
+         .language-selected {
+             font-size: 12px;
+    
+         }
+    
+         .down {
+             padding-left: 0;
+             margin-top: 5px;
+             margin-right: 4px;
+         }
+    
+         .language-selected:hover .language-options {
+             display: none;
+         }
+    
+         .language-selected {
+             cursor: pointer;
+         }
+    
+         .language-selected:active .language-options {
+             display: block;
+         }
+    
+         .right {
+             /* margin-right: 20px; */
+             /* background-color: #0058D7; */
+             gap: 10px;
+             margin-left: 130px;
+             margin-top: 5px;
+             /* z-index: 9; */
+         }
+    
+         .right .down {
+             margin-left: -70px;
+         }
+    
+         .logo {
+             /* margin: 40px; */
+    
+             height: 30px;
+             margin-left: 0px;
+         }
+    
+         .right .language-selected {
+             margin-left: -5px;
+         }
+    
+         #toggle:checked~.links-container {
+             right: 0;
+         }
+    
+         #toggle:checked~#overlay {
+    
+             height: 100%;
+             width: 100%;
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: 9;
+             /* background-color: #; */
+         }
+    
+         .links-container a:active,
+         .links-container a:focus {
+             text-decoration: none;
+             color: #f3f3f3;
+    
+         }
+    
+         nav {
+             position: sticky;
+             background-color: #ffffff;
+         }
+}

@@ -1,0 +1,575 @@
+/* General Styles */
+body {
+    font-family: Netflix sans;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #0058D7;
+    --text-color-1: #f3f3f3;
+    --text-color-2: #181818;
+    --text-color-3: rgba(59, 59, 59, 0.4);
+
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    /* background-color: var(--main-color);   */
+}
+
+.logo {
+    margin-left: 50px;
+    transition: all 0.3s ease;
+}
+
+.links-container {
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: var(--text-color-3);
+    font-family: netflix sans;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.links-container a:active,
+.links-container a:focus {
+    text-decoration: none;
+    color: var(--text-color-2);
+
+}
+
+.links-container a:hover {
+    color: var(--text-color-2);
+}
+
+.hid {
+    display: none;
+}
+
+.language-dropdown {
+    position: relative;
+    list-style: none;
+    font-family: Netflix sans;
+    color: var(--text-color-2);
+    margin-left: -88px;
+
+}
+
+.language-selected {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 450;
+}
+
+.language-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--main-color);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid var(--text-color-1); */
+}
+
+.language-options li {
+    margin: 0;
+    padding: 0;
+}
+
+.language-option {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.language-option:hover {
+    background-color: #014db8;
+}
+
+.language-dropdown:hover .language-options {
+    display: block;
+}
+
+#login {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--main-color);
+    color: var(--text-color-1);
+    font-family: Netflix sans;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#login a {
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+#login:hover {
+    background-color: #014db8;
+}
+
+.lang {
+    margin-right: 40px;
+}
+
+.down {
+    margin-left: -55px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+
+
+
+.close {
+    display: none;
+
+}
+
+.open {
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--main-color);
+    color: var(--text-color-1);
+    padding: 60px 0;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Course Categories */
+.courses {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-item {
+    width: 30%;
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-item h3 {
+    font-size: 22px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.course-item ul {
+    list-style: none;
+    padding: 0;
+    color: #6c757d;
+}
+
+/* Features Section */
+.features {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+}
+
+/* Certification Partners Section */
+.certifications {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.certifications h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cert-logos img {
+    margin: 0 20px;
+    width: 100px;
+    height: auto;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Admission Requirements Section */
+.requirements {
+    padding: 40px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.requirements h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    color: #6c757d;
+}
+
+/* Apply Now Section */
+.apply {
+    padding: 40px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+.apply-btn {
+    background-color: white;
+    color: var(--main-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Footer Section */
+.footer {
+    padding: 100px;
+    padding-top: 50px;
+    margin-top: 100px;
+    
+    /* background-color: #014db8; */
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+    /* margin: 10px; */
+    /* background-color: #1a1a1a; */
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-first-p {
+    font-family: Netflix sans;
+    font-size: 12px;
+    color: var(--text-color-3);
+}
+
+/* .footer-first-div {
+    background-color: #8e8e8e;
+} */
+
+.footer-second-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-list li {
+    list-style: none;
+    font-family: Netflix sans;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    padding-left: 0;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: var(--text-color-3);
+}
+
+/* .footer-links-container {
+    background-color: #E0DFDF;
+} */
+
+.footer-head {
+    font-family: Netflix sans;
+    font-size: 14px;
+    color: var(--text-color-2);
+}
+
+.footer-hr {
+    /* background-color: var(--text-color-3); */
+    margin-top: 30px;
+    height: 0.5px;
+
+}
+
+.footer-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-foot-p {
+    font-family: Netflix sans;
+    font-size: 12px;
+    color: var(--text-color-3);
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .course-list {
+        flex-direction: column;
+    }
+
+    .course-item {
+        width: 100%;
+    }
+
+    .cert-logos img {
+        margin: 10px;
+    }
+
+         .footer {
+             padding: 20px;
+             padding-top: 30px;
+    
+         }
+    
+         .footer-foot-p {
+             font-size: 6px;
+         }
+    
+         .footer-links {
+             font-size: 6px;
+         }
+    
+         .footer-head {
+             font-size: 7px;
+         }
+    
+         .footer-first-p {
+             font-size: 6px;
+         }
+    
+         .footer-logo {
+             height: 20px;
+         }
+    
+         .social-icons {
+             height: 12px;
+             width: 12px;
+         }
+    
+         .icons {
+             width: 25%;
+         }
+    
+         .links-container {
+             flex-direction: column;
+             align-items: flex-start;
+             position: fixed;
+             top: 0;
+             right: -100%;
+    
+             z-index: 10;
+             width: 300px;
+             background-color: var(--main-color);
+             box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
+             transition: 1s ease-out;
+    
+         }
+    
+         #login {
+             display: none;
+         }
+    
+         .links-container a {
+             color: #f3f3f3a2;
+         }
+    
+         nav a {
+             box-sizing: border-box;
+             height: auto;
+             width: 100%;
+             padding: 20px 30px;
+             justify-content: flex-start;
+             color: var(--text-color-1);
+         }
+    
+         .open,
+         .close {
+             display: block;
+             padding: 20px;
+    
+    
+         }
+    
+         .open {
+             margin-top: 10px;
+             margin-left: 0px;
+         }
+    
+         .hid {
+             display: block;
+         }
+    
+         .language-selected {
+             font-size: 12px;
+    
+         }
+    
+         .down {
+             padding-left: 0;
+             margin-top: 5px;
+             margin-right: 4px;
+         }
+    
+         .language-selected:hover .language-options {
+             display: none;
+         }
+    
+         .language-selected {
+             cursor: pointer;
+         }
+    
+         .language-selected:active .language-options {
+             display: block;
+         }
+    
+         .right {
+             /* margin-right: 20px; */
+             /* background-color: #0058D7; */
+             gap: 10px;
+             margin-left: 130px;
+             margin-top: 5px;
+             /* z-index: 9; */
+         }
+    
+         .right .down {
+             margin-left: -70px;
+         }
+    
+         .logo {
+             /* margin: 40px; */
+    
+             height: 30px;
+             margin-left: 0px;
+         }
+    
+         .right .language-selected {
+             margin-left: -5px;
+         }
+    
+         #toggle:checked~.links-container {
+             right: 0;
+         }
+    
+         #toggle:checked~#overlay {
+    
+             height: 100%;
+             width: 100%;
+             position: fixed;
+             top: 0;
+             left: 0;
+             z-index: 9;
+             /* background-color: #; */
+         }
+    
+         .links-container a:active,
+         .links-container a:focus {
+             text-decoration: none;
+             color: #f3f3f3;
+    
+         }
+    
+         nav {
+             position: sticky;
+             background-color: #ffffff;
+         }
+}
